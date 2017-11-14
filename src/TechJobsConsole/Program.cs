@@ -119,8 +119,17 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            foreach (var job in someJobs)
+            if (someJobs.Count == 0)
             {
+                Console.WriteLine("Nothing showed up");           
+            }
+
+            else
+            {
+
+            }
+                foreach (var job in someJobs)
+                {
                 Console.WriteLine("*****");
                 foreach (var pair in job)
                 {
